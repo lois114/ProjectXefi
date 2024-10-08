@@ -1,0 +1,18 @@
+CRITICAL - 2024-02-26 15:06:31 --> file_get_contents(): Filename cannot be empty
+in APPPATH\Controllers\SignupController.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(): Filename cannot be empty', 'C:\\laragon\\www\\FORMULAIRE\\app\\Controllers\\SignupController.php', 158, [...])
+ 2 APPPATH\Controllers\SignupController.php(158): file_get_contents('')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SignupController->generateFileToPDF('49')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\FORMULAIRE\\public\\index.php')
+CRITICAL - 2024-02-26 15:06:36 --> file_get_contents(): Filename cannot be empty
+in APPPATH\Controllers\SignupController.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(): Filename cannot be empty', 'C:\\laragon\\www\\FORMULAIRE\\app\\Controllers\\SignupController.php', 158, [...])
+ 2 APPPATH\Controllers\SignupController.php(158): file_get_contents('')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SignupController->generateFileToPDF('50')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\FORMULAIRE\\public\\index.php')

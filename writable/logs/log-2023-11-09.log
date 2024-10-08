@@ -1,0 +1,193 @@
+CRITICAL - 2023-11-09 13:27:56 --> syntax error, unexpected token "}", expecting variable
+in APPPATH\Models\IngredientModel.php on line 34.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\ci-atelier3\\app\\Models\\IngredientModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\IngredientModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\IngredientModel')
+ 4 SYSTEMPATH\Config\Factories.php(270): class_exists('App\\Models\\IngredientModel')
+ 5 SYSTEMPATH\Config\Factories.php(196): CodeIgniter\Config\Factories::locateClass([...], 'IngredientModel')
+ 6 SYSTEMPATH\Config\Factories.php(155): CodeIgniter\Config\Factories::getDefinedInstance([...], 'IngredientModel', [...])
+ 7 SYSTEMPATH\Common.php(827): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 8 APPPATH\Controllers\Ingredient.php(11): model('IngredientModel')
+ 9 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Ingredient->getListe()
+10 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ingredient))
+11 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 13:28:06 --> syntax error, unexpected token "}", expecting variable
+in APPPATH\Models\IngredientModel.php on line 34.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\ci-atelier3\\app\\Models\\IngredientModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\IngredientModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\IngredientModel')
+ 4 SYSTEMPATH\Config\Factories.php(270): class_exists('App\\Models\\IngredientModel')
+ 5 SYSTEMPATH\Config\Factories.php(196): CodeIgniter\Config\Factories::locateClass([...], 'IngredientModel')
+ 6 SYSTEMPATH\Config\Factories.php(155): CodeIgniter\Config\Factories::getDefinedInstance([...], 'IngredientModel', [...])
+ 7 SYSTEMPATH\Common.php(827): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 8 APPPATH\Controllers\Ingredient.php(11): model('IngredientModel')
+ 9 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Ingredient->getListe()
+10 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ingredient))
+11 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 14:03:54 --> Undefined variable $IngredientModel
+in APPPATH\Controllers\Recette.php on line 14.
+ 1 APPPATH\Controllers\Recette.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $IngredientModel', 'C:\\laragon\\www\\ci-atelier3\\app\\Controllers\\Recette.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Recette->getListe()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recette))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 14:05:12 --> Undefined array key "idIngredient"
+in APPPATH\Controllers\Recette.php on line 14.
+ 1 APPPATH\Controllers\Recette.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idIngredient"', 'C:\\laragon\\www\\ci-atelier3\\app\\Controllers\\Recette.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Recette->getListe()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recette))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-09 14:05:42 --> mysqli_sql_exception: Unknown column 'ingredient_recette.idIngredient' in 'where clause' in C:\laragon\www\ci-atelier3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\ci-atelier3\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL Get_Ing_By...', 0)
+#1 C:\laragon\www\ci-atelier3\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CALL Get_Ing_By...')
+#2 C:\laragon\www\ci-atelier3\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CALL Get_Ing_By...')
+#3 C:\laragon\www\ci-atelier3\app\Models\RecetteModel.php(34): CodeIgniter\Database\BaseConnection->query('CALL Get_Ing_By...', '1')
+#4 C:\laragon\www\ci-atelier3\app\Controllers\Recette.php(14): App\Models\RecetteModel->Ingredients_By_Recette('1')
+#5 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(919): App\Controllers\Recette->getListe()
+#6 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recette))
+#7 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-atelier3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-09 14:05:42 --> Unknown column 'ingredient_recette.idIngredient' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\RecetteModel.php(34): CodeIgniter\Database\BaseConnection->query('CALL Get_Ing_By_idRecette(?)', '1')
+ 2 APPPATH\Controllers\Recette.php(14): App\Models\RecetteModel->Ingredients_By_Recette('1')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Recette->getListe()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recette))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-09 14:05:48 --> mysqli_sql_exception: Unknown column 'ingredient_recette.idIngredient' in 'where clause' in C:\laragon\www\ci-atelier3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\ci-atelier3\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL Get_Ing_By...', 0)
+#1 C:\laragon\www\ci-atelier3\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CALL Get_Ing_By...')
+#2 C:\laragon\www\ci-atelier3\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CALL Get_Ing_By...')
+#3 C:\laragon\www\ci-atelier3\app\Models\RecetteModel.php(34): CodeIgniter\Database\BaseConnection->query('CALL Get_Ing_By...', '1')
+#4 C:\laragon\www\ci-atelier3\app\Controllers\Recette.php(14): App\Models\RecetteModel->Ingredients_By_Recette('1')
+#5 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(919): App\Controllers\Recette->getListe()
+#6 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recette))
+#7 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-atelier3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-09 14:05:48 --> Unknown column 'ingredient_recette.idIngredient' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\RecetteModel.php(34): CodeIgniter\Database\BaseConnection->query('CALL Get_Ing_By_idRecette(?)', '1')
+ 2 APPPATH\Controllers\Recette.php(14): App\Models\RecetteModel->Ingredients_By_Recette('1')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Recette->getListe()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recette))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-09 14:07:27 --> mysqli_sql_exception: Unknown column 'ingredient_recette.idIngredient' in 'where clause' in C:\laragon\www\ci-atelier3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\ci-atelier3\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL Get_Ing_By...', 0)
+#1 C:\laragon\www\ci-atelier3\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CALL Get_Ing_By...')
+#2 C:\laragon\www\ci-atelier3\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CALL Get_Ing_By...')
+#3 C:\laragon\www\ci-atelier3\app\Models\RecetteModel.php(34): CodeIgniter\Database\BaseConnection->query('CALL Get_Ing_By...', '1')
+#4 C:\laragon\www\ci-atelier3\app\Controllers\Recette.php(15): App\Models\RecetteModel->Ingredients_By_Recette('1')
+#5 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(919): App\Controllers\Recette->getListe()
+#6 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recette))
+#7 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-atelier3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-09 14:07:27 --> Unknown column 'ingredient_recette.idIngredient' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\RecetteModel.php(34): CodeIgniter\Database\BaseConnection->query('CALL Get_Ing_By_idRecette(?)', '1')
+ 2 APPPATH\Controllers\Recette.php(15): App\Models\RecetteModel->Ingredients_By_Recette('1')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Recette->getListe()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recette))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 14:19:42 --> Undefined array key "Ingredients"
+in APPPATH\Views\recette\recette_liste.php on line 19.
+ 1 APPPATH\Views\recette\recette_liste.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Ingredients"', 'C:\\laragon\\www\\ci-atelier3\\app\\Views\\recette\\recette_liste.php', 19)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\ci-atelier3\\app\\Views\\recette\\recette_liste.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('recette/recette_liste.php', [], true)
+ 5 APPPATH\Controllers\Recette.php(21): view('recette/recette_liste.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Recette->getListe()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recette))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 14:29:59 --> syntax error, unexpected token "echo"
+in APPPATH\Views\recette\recette_liste.php on line 19.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('recette/recette_liste.php', [], true)
+ 3 APPPATH\Controllers\Recette.php(21): view('recette/recette_liste.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Recette->getListe()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recette))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 14:40:26 --> Undefined constant "Ingredients"
+in APPPATH\Views\recette\recette_liste.php on line 18.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('recette/recette_liste.php', [], true)
+ 4 APPPATH\Controllers\Recette.php(21): view('recette/recette_liste.php', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Recette->getListe()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recette))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 14:40:50 --> Undefined array key "Ingredients"
+in APPPATH\Views\recette\recette_liste.php on line 23.
+ 1 APPPATH\Views\recette\recette_liste.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Ingredients"', 'C:\\laragon\\www\\ci-atelier3\\app\\Views\\recette\\recette_liste.php', 23)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\ci-atelier3\\app\\Views\\recette\\recette_liste.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('recette/recette_liste.php', [], true)
+ 5 APPPATH\Controllers\Recette.php(21): view('recette/recette_liste.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Recette->getListe()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recette))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 14:43:36 --> Undefined array key "Ingredients"
+in APPPATH\Views\recette\recette_liste.php on line 21.
+ 1 APPPATH\Views\recette\recette_liste.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Ingredients"', 'C:\\laragon\\www\\ci-atelier3\\app\\Views\\recette\\recette_liste.php', 21)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\ci-atelier3\\app\\Views\\recette\\recette_liste.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('recette/recette_liste.php', [], true)
+ 5 APPPATH\Controllers\Recette.php(21): view('recette/recette_liste.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Recette->getListe()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recette))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 14:49:43 --> Undefined variable $Les_Recettes
+in APPPATH\Views\recette\recette_liste.php on line 13.
+ 1 APPPATH\Views\recette\recette_liste.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Les_Recettes', 'C:\\laragon\\www\\ci-atelier3\\app\\Views\\recette\\recette_liste.php', 13)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\ci-atelier3\\app\\Views\\recette\\recette_liste.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('recette/recette_liste.php', [], true)
+ 5 APPPATH\Controllers\Recette.php(22): view('recette/recette_liste.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Recette->getListe()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recette))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 14:49:56 --> Undefined array key "nomRecette"
+in APPPATH\Views\recette\recette_liste.php on line 17.
+ 1 APPPATH\Views\recette\recette_liste.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nomRecette"', 'C:\\laragon\\www\\ci-atelier3\\app\\Views\\recette\\recette_liste.php', 17)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\ci-atelier3\\app\\Views\\recette\\recette_liste.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('recette/recette_liste.php', [], true)
+ 5 APPPATH\Controllers\Recette.php(22): view('recette/recette_liste.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Recette->getListe()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recette))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 14:53:24 --> Illegal offset type
+in APPPATH\Controllers\Recette.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Recette->getListe()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recette))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 14:54:37 --> Array to string conversion
+in APPPATH\Views\recette\recette_liste.php on line 21.
+ 1 APPPATH\Views\recette\recette_liste.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\laragon\\www\\ci-atelier3\\app\\Views\\recette\\recette_liste.php', 21)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\ci-atelier3\\app\\Views\\recette\\recette_liste.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('recette/recette_liste.php', [], true)
+ 5 APPPATH\Controllers\Recette.php(23): view('recette/recette_liste.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Recette->getListe()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recette))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

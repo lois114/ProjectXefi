@@ -1,0 +1,595 @@
+CRITICAL - 2023-10-19 12:16:28 --> Array to string conversion
+in APPPATH\Controllers\TestDB.php on line 23.
+ 1 APPPATH\Controllers\TestDB.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\laragon\\www\\ci-atelier3\\app\\Controllers\\TestDB.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TestDB->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-19 12:17:25 --> Array to string conversion
+in APPPATH\Controllers\TestDB.php on line 23.
+ 1 APPPATH\Controllers\TestDB.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\laragon\\www\\ci-atelier3\\app\\Controllers\\TestDB.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TestDB->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-19 12:17:30 --> Undefined array key 0
+in APPPATH\Controllers\TestDB.php on line 23.
+ 1 APPPATH\Controllers\TestDB.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\laragon\\www\\ci-atelier3\\app\\Controllers\\TestDB.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TestDB->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-19 12:22:50 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 768.
+ 1 SYSTEMPATH\BaseModel.php(768): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([], false)
+ 3 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 4 APPPATH\Controllers\TestDB.php(25): CodeIgniter\BaseModel->save([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TestDB->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-19 12:23:41 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 768.
+ 1 SYSTEMPATH\BaseModel.php(768): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([], false)
+ 3 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 4 APPPATH\Controllers\TestDB.php(25): CodeIgniter\BaseModel->save([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TestDB->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-19 12:27:41 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`hellskitchen`.`recettes`, CONSTRAINT `recettes_ibfk_1` FOREIGN KEY (`idType`) REFERENCES `types` (`idType`)) in C:\laragon\www\ci-atelier3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\ci-atelier3\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `re...', 0)
+#1 C:\laragon\www\ci-atelier3\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 C:\laragon\www\ci-atelier3\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 C:\laragon\www\ci-atelier3\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 C:\laragon\www\ci-atelier3\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\ci-atelier3\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\ci-atelier3\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\ci-atelier3\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\ci-atelier3\app\Controllers\TestDB.php(28): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(919): App\Controllers\TestDB->index()
+#10 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+#11 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\ci-atelier3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-10-19 12:27:41 --> Cannot add or update a child row: a foreign key constraint fails (`hellskitchen`.`recettes`, CONSTRAINT `recettes_ibfk_1` FOREIGN KEY (`idType`) REFERENCES `types` (`idType`))
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `recettes` (`nomRecette`, `instruction`) VALUES (:nomRecette:, :instruction:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\TestDB.php(28): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TestDB->index()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-19 12:46:11 --> Call to undefined method App\Models\IngredientModel::Ingredient_In_Recette
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\TestDB.php(36): CodeIgniter\Model->__call('Ingredient_In_Recette', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TestDB->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-19 12:48:39 --> Call to undefined method App\Models\IngredientModel::Ingredient_In_Recette
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\TestDB.php(36): CodeIgniter\Model->__call('Ingredient_In_Recette', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TestDB->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-19 12:49:06 --> Call to undefined method App\Models\IngredientModel::Ingredient_In_Recette
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\TestDB.php(36): CodeIgniter\Model->__call('Ingredient_In_Recette', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TestDB->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-19 12:49:27 --> Call to undefined method App\Models\IngredientModel::Ingredient_In_Recette
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\TestDB.php(36): CodeIgniter\Model->__call('Ingredient_In_Recette', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TestDB->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-19 12:49:39 --> Undefined variable $id
+in APPPATH\Models\RecetteModel.php on line 29.
+ 1 APPPATH\Models\RecetteModel.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'C:\\laragon\\www\\ci-atelier3\\app\\Models\\RecetteModel.php', 29)
+ 2 APPPATH\Controllers\TestDB.php(36): App\Models\RecetteModel->Ingredient_In_Recette(6, 31, 100)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TestDB->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-19 12:49:57 --> mysqli_sql_exception: Column 'idRecette' cannot be null in C:\laragon\www\ci-atelier3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\ci-atelier3\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL Ajout_Ing(...', 0)
+#1 C:\laragon\www\ci-atelier3\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CALL Ajout_Ing(...')
+#2 C:\laragon\www\ci-atelier3\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CALL Ajout_Ing(...')
+#3 C:\laragon\www\ci-atelier3\app\Models\RecetteModel.php(29): CodeIgniter\Database\BaseConnection->query('CALL Ajout_Ing(...', Array)
+#4 C:\laragon\www\ci-atelier3\app\Controllers\TestDB.php(36): App\Models\RecetteModel->Ingredient_In_Recette(6, 31, 100)
+#5 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(919): App\Controllers\TestDB->index()
+#6 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+#7 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-atelier3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-19 12:49:57 --> Column 'idRecette' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\RecetteModel.php(29): CodeIgniter\Database\BaseConnection->query('CALL Ajout_Ing(?,?,?)', [...])
+ 2 APPPATH\Controllers\TestDB.php(36): App\Models\RecetteModel->Ingredient_In_Recette(6, 31, 100)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TestDB->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-19 12:50:11 --> mysqli_sql_exception: Column 'idRecette' cannot be null in C:\laragon\www\ci-atelier3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\ci-atelier3\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL Ajout_Ing(...', 0)
+#1 C:\laragon\www\ci-atelier3\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CALL Ajout_Ing(...')
+#2 C:\laragon\www\ci-atelier3\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CALL Ajout_Ing(...')
+#3 C:\laragon\www\ci-atelier3\app\Models\RecetteModel.php(29): CodeIgniter\Database\BaseConnection->query('CALL Ajout_Ing(...', Array)
+#4 C:\laragon\www\ci-atelier3\app\Controllers\TestDB.php(36): App\Models\RecetteModel->Ingredient_In_Recette(6, 31, 100)
+#5 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(919): App\Controllers\TestDB->index()
+#6 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+#7 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-atelier3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-19 12:50:11 --> Column 'idRecette' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\RecetteModel.php(29): CodeIgniter\Database\BaseConnection->query('CALL Ajout_Ing(?,?,?)', [...])
+ 2 APPPATH\Controllers\TestDB.php(36): App\Models\RecetteModel->Ingredient_In_Recette(6, 31, 100)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TestDB->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-19 12:50:12 --> mysqli_sql_exception: Column 'idRecette' cannot be null in C:\laragon\www\ci-atelier3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\ci-atelier3\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL Ajout_Ing(...', 0)
+#1 C:\laragon\www\ci-atelier3\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CALL Ajout_Ing(...')
+#2 C:\laragon\www\ci-atelier3\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CALL Ajout_Ing(...')
+#3 C:\laragon\www\ci-atelier3\app\Models\RecetteModel.php(29): CodeIgniter\Database\BaseConnection->query('CALL Ajout_Ing(...', Array)
+#4 C:\laragon\www\ci-atelier3\app\Controllers\TestDB.php(36): App\Models\RecetteModel->Ingredient_In_Recette(6, 31, 100)
+#5 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(919): App\Controllers\TestDB->index()
+#6 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+#7 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-atelier3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-19 12:50:12 --> Column 'idRecette' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\RecetteModel.php(29): CodeIgniter\Database\BaseConnection->query('CALL Ajout_Ing(?,?,?)', [...])
+ 2 APPPATH\Controllers\TestDB.php(36): App\Models\RecetteModel->Ingredient_In_Recette(6, 31, 100)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TestDB->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-19 12:50:28 --> Class "100" not found
+in SYSTEMPATH\Database\BaseConnection.php on line 580.
+ 1 APPPATH\Models\RecetteModel.php(29): CodeIgniter\Database\BaseConnection->query('CALL Ajout_Ing(?,?,?)', 6, true, '100')
+ 2 APPPATH\Controllers\TestDB.php(36): App\Models\RecetteModel->Ingredient_In_Recette(6, 31, 100)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TestDB->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-19 12:50:56 --> mysqli_sql_exception: Column 'idRecette' cannot be null in C:\laragon\www\ci-atelier3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\ci-atelier3\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL Ajout_Ing(...', 0)
+#1 C:\laragon\www\ci-atelier3\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CALL Ajout_Ing(...')
+#2 C:\laragon\www\ci-atelier3\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CALL Ajout_Ing(...')
+#3 C:\laragon\www\ci-atelier3\app\Models\RecetteModel.php(29): CodeIgniter\Database\BaseConnection->query('CALL Ajout_Ing(...', Array)
+#4 C:\laragon\www\ci-atelier3\app\Controllers\TestDB.php(36): App\Models\RecetteModel->Ingredient_In_Recette(6, 31, 100)
+#5 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(919): App\Controllers\TestDB->index()
+#6 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+#7 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-atelier3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-19 12:50:56 --> Column 'idRecette' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\RecetteModel.php(29): CodeIgniter\Database\BaseConnection->query('CALL Ajout_Ing(?,?,?)', [...])
+ 2 APPPATH\Controllers\TestDB.php(36): App\Models\RecetteModel->Ingredient_In_Recette(6, 31, 100)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TestDB->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-19 12:52:34 --> mysqli_sql_exception: Column 'idRecette' cannot be null in C:\laragon\www\ci-atelier3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\ci-atelier3\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL Ajout_Ing(...', 0)
+#1 C:\laragon\www\ci-atelier3\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CALL Ajout_Ing(...')
+#2 C:\laragon\www\ci-atelier3\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CALL Ajout_Ing(...')
+#3 C:\laragon\www\ci-atelier3\app\Models\RecetteModel.php(29): CodeIgniter\Database\BaseConnection->query('CALL Ajout_Ing(...', Array)
+#4 C:\laragon\www\ci-atelier3\app\Controllers\TestDB.php(36): App\Models\RecetteModel->Ingredient_In_Recette(6, 31, 100)
+#5 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(919): App\Controllers\TestDB->index()
+#6 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+#7 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-atelier3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-19 12:52:34 --> Column 'idRecette' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\RecetteModel.php(29): CodeIgniter\Database\BaseConnection->query('CALL Ajout_Ing(?,?,?)', [...])
+ 2 APPPATH\Controllers\TestDB.php(36): App\Models\RecetteModel->Ingredient_In_Recette(6, 31, 100)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TestDB->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-19 12:52:38 --> mysqli_sql_exception: Column 'idRecette' cannot be null in C:\laragon\www\ci-atelier3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\ci-atelier3\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL Ajout_Ing(...', 0)
+#1 C:\laragon\www\ci-atelier3\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CALL Ajout_Ing(...')
+#2 C:\laragon\www\ci-atelier3\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CALL Ajout_Ing(...')
+#3 C:\laragon\www\ci-atelier3\app\Models\RecetteModel.php(29): CodeIgniter\Database\BaseConnection->query('CALL Ajout_Ing(...', Array)
+#4 C:\laragon\www\ci-atelier3\app\Controllers\TestDB.php(36): App\Models\RecetteModel->Ingredient_In_Recette(6, 31, 100)
+#5 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(919): App\Controllers\TestDB->index()
+#6 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+#7 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-atelier3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-19 12:52:38 --> Column 'idRecette' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\RecetteModel.php(29): CodeIgniter\Database\BaseConnection->query('CALL Ajout_Ing(?,?,?)', [...])
+ 2 APPPATH\Controllers\TestDB.php(36): App\Models\RecetteModel->Ingredient_In_Recette(6, 31, 100)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TestDB->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-19 12:55:18 --> mysqli_sql_exception: Column 'idRecette' cannot be null in C:\laragon\www\ci-atelier3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\ci-atelier3\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL Ajout_Ing(...', 0)
+#1 C:\laragon\www\ci-atelier3\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CALL Ajout_Ing(...')
+#2 C:\laragon\www\ci-atelier3\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CALL Ajout_Ing(...')
+#3 C:\laragon\www\ci-atelier3\app\Models\RecetteModel.php(29): CodeIgniter\Database\BaseConnection->query('CALL Ajout_Ing(...', Array)
+#4 C:\laragon\www\ci-atelier3\app\Controllers\TestDB.php(36): App\Models\RecetteModel->Ingredient_In_Recette(6, 31, 100)
+#5 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(919): App\Controllers\TestDB->index()
+#6 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+#7 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-atelier3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-19 12:55:18 --> Column 'idRecette' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\RecetteModel.php(29): CodeIgniter\Database\BaseConnection->query('CALL Ajout_Ing(?,?,?)', [...])
+ 2 APPPATH\Controllers\TestDB.php(36): App\Models\RecetteModel->Ingredient_In_Recette(6, 31, 100)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TestDB->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-19 12:57:54 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?,?,?)' at line 1 in C:\laragon\www\ci-atelier3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\ci-atelier3\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL Ajout_Ing(...', 0)
+#1 C:\laragon\www\ci-atelier3\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CALL Ajout_Ing(...')
+#2 C:\laragon\www\ci-atelier3\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CALL Ajout_Ing(...')
+#3 C:\laragon\www\ci-atelier3\app\Models\RecetteModel.php(29): CodeIgniter\Database\BaseConnection->query('CALL Ajout_Ing(...', Array)
+#4 C:\laragon\www\ci-atelier3\app\Controllers\TestDB.php(36): App\Models\RecetteModel->Ingredient_In_Recette(6, 31, 100)
+#5 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(919): App\Controllers\TestDB->index()
+#6 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+#7 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-atelier3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-19 12:57:54 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?,?,?)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\RecetteModel.php(29): CodeIgniter\Database\BaseConnection->query('CALL Ajout_Ing(?,?,?)', [...])
+ 2 APPPATH\Controllers\TestDB.php(36): App\Models\RecetteModel->Ingredient_In_Recette(6, 31, 100)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TestDB->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-19 12:58:23 --> mysqli_sql_exception: Column 'idRecette' cannot be null in C:\laragon\www\ci-atelier3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\ci-atelier3\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL Ajout_Ing(...', 0)
+#1 C:\laragon\www\ci-atelier3\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CALL Ajout_Ing(...')
+#2 C:\laragon\www\ci-atelier3\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CALL Ajout_Ing(...')
+#3 C:\laragon\www\ci-atelier3\app\Models\RecetteModel.php(29): CodeIgniter\Database\BaseConnection->query('CALL Ajout_Ing(...', Array)
+#4 C:\laragon\www\ci-atelier3\app\Controllers\TestDB.php(36): App\Models\RecetteModel->Ingredient_In_Recette(6, 31, 100)
+#5 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(919): App\Controllers\TestDB->index()
+#6 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+#7 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-atelier3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-19 12:58:23 --> Column 'idRecette' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\RecetteModel.php(29): CodeIgniter\Database\BaseConnection->query('CALL Ajout_Ing(?,?,?)', [...])
+ 2 APPPATH\Controllers\TestDB.php(36): App\Models\RecetteModel->Ingredient_In_Recette(6, 31, 100)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TestDB->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-19 12:58:41 --> mysqli_sql_exception: Incorrect number of arguments for PROCEDURE hellskitchen.Ajout_Ing; expected 3, got 1 in C:\laragon\www\ci-atelier3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\ci-atelier3\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL Ajout_Ing(...', 0)
+#1 C:\laragon\www\ci-atelier3\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CALL Ajout_Ing(...')
+#2 C:\laragon\www\ci-atelier3\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CALL Ajout_Ing(...')
+#3 C:\laragon\www\ci-atelier3\app\Models\RecetteModel.php(29): CodeIgniter\Database\BaseConnection->query('CALL Ajout_Ing(...', Array)
+#4 C:\laragon\www\ci-atelier3\app\Controllers\TestDB.php(36): App\Models\RecetteModel->Ingredient_In_Recette(6, 31, 100)
+#5 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(919): App\Controllers\TestDB->index()
+#6 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+#7 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-atelier3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-19 12:58:41 --> Incorrect number of arguments for PROCEDURE hellskitchen.Ajout_Ing; expected 3, got 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\RecetteModel.php(29): CodeIgniter\Database\BaseConnection->query('CALL Ajout_Ing(?)', [...])
+ 2 APPPATH\Controllers\TestDB.php(36): App\Models\RecetteModel->Ingredient_In_Recette(6, 31, 100)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TestDB->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-19 12:59:51 --> mysqli_sql_exception: Column 'idRecette' cannot be null in C:\laragon\www\ci-atelier3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\ci-atelier3\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL Ajout_Ing(...', 0)
+#1 C:\laragon\www\ci-atelier3\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CALL Ajout_Ing(...')
+#2 C:\laragon\www\ci-atelier3\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CALL Ajout_Ing(...')
+#3 C:\laragon\www\ci-atelier3\app\Models\RecetteModel.php(29): CodeIgniter\Database\BaseConnection->query('CALL Ajout_Ing(...', Array)
+#4 C:\laragon\www\ci-atelier3\app\Controllers\TestDB.php(36): App\Models\RecetteModel->Ingredient_In_Recette(6, 31, 100)
+#5 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(919): App\Controllers\TestDB->index()
+#6 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+#7 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-atelier3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-19 12:59:51 --> Column 'idRecette' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\RecetteModel.php(29): CodeIgniter\Database\BaseConnection->query('CALL Ajout_Ing(?,?,?)', [...])
+ 2 APPPATH\Controllers\TestDB.php(36): App\Models\RecetteModel->Ingredient_In_Recette(6, 31, 100)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TestDB->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-19 13:00:13 --> mysqli_sql_exception: Column 'idRecette' cannot be null in C:\laragon\www\ci-atelier3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\ci-atelier3\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL Ajout_Ing(...', 0)
+#1 C:\laragon\www\ci-atelier3\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CALL Ajout_Ing(...')
+#2 C:\laragon\www\ci-atelier3\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CALL Ajout_Ing(...')
+#3 C:\laragon\www\ci-atelier3\app\Models\RecetteModel.php(29): CodeIgniter\Database\BaseConnection->query('CALL Ajout_Ing(...', Array)
+#4 C:\laragon\www\ci-atelier3\app\Controllers\TestDB.php(36): App\Models\RecetteModel->Ingredient_In_Recette('6', '31', '100')
+#5 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(919): App\Controllers\TestDB->index()
+#6 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+#7 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-atelier3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-19 13:00:13 --> Column 'idRecette' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\RecetteModel.php(29): CodeIgniter\Database\BaseConnection->query('CALL Ajout_Ing(?,?,?)', [...])
+ 2 APPPATH\Controllers\TestDB.php(36): App\Models\RecetteModel->Ingredient_In_Recette('6', '31', '100')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TestDB->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-19 13:00:13 --> mysqli_sql_exception: Column 'idRecette' cannot be null in C:\laragon\www\ci-atelier3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\ci-atelier3\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL Ajout_Ing(...', 0)
+#1 C:\laragon\www\ci-atelier3\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CALL Ajout_Ing(...')
+#2 C:\laragon\www\ci-atelier3\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CALL Ajout_Ing(...')
+#3 C:\laragon\www\ci-atelier3\app\Models\RecetteModel.php(29): CodeIgniter\Database\BaseConnection->query('CALL Ajout_Ing(...', Array)
+#4 C:\laragon\www\ci-atelier3\app\Controllers\TestDB.php(36): App\Models\RecetteModel->Ingredient_In_Recette('6', '31', '100')
+#5 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(919): App\Controllers\TestDB->index()
+#6 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+#7 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-atelier3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-19 13:00:13 --> Column 'idRecette' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\RecetteModel.php(29): CodeIgniter\Database\BaseConnection->query('CALL Ajout_Ing(?,?,?)', [...])
+ 2 APPPATH\Controllers\TestDB.php(36): App\Models\RecetteModel->Ingredient_In_Recette('6', '31', '100')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TestDB->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-19 13:00:14 --> mysqli_sql_exception: Column 'idRecette' cannot be null in C:\laragon\www\ci-atelier3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\ci-atelier3\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL Ajout_Ing(...', 0)
+#1 C:\laragon\www\ci-atelier3\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CALL Ajout_Ing(...')
+#2 C:\laragon\www\ci-atelier3\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CALL Ajout_Ing(...')
+#3 C:\laragon\www\ci-atelier3\app\Models\RecetteModel.php(29): CodeIgniter\Database\BaseConnection->query('CALL Ajout_Ing(...', Array)
+#4 C:\laragon\www\ci-atelier3\app\Controllers\TestDB.php(36): App\Models\RecetteModel->Ingredient_In_Recette('6', '31', '100')
+#5 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(919): App\Controllers\TestDB->index()
+#6 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+#7 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-atelier3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-19 13:00:14 --> Column 'idRecette' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\RecetteModel.php(29): CodeIgniter\Database\BaseConnection->query('CALL Ajout_Ing(?,?,?)', [...])
+ 2 APPPATH\Controllers\TestDB.php(36): App\Models\RecetteModel->Ingredient_In_Recette('6', '31', '100')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TestDB->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-19 13:00:14 --> mysqli_sql_exception: Column 'idRecette' cannot be null in C:\laragon\www\ci-atelier3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\ci-atelier3\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL Ajout_Ing(...', 0)
+#1 C:\laragon\www\ci-atelier3\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CALL Ajout_Ing(...')
+#2 C:\laragon\www\ci-atelier3\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CALL Ajout_Ing(...')
+#3 C:\laragon\www\ci-atelier3\app\Models\RecetteModel.php(29): CodeIgniter\Database\BaseConnection->query('CALL Ajout_Ing(...', Array)
+#4 C:\laragon\www\ci-atelier3\app\Controllers\TestDB.php(36): App\Models\RecetteModel->Ingredient_In_Recette('6', '31', '100')
+#5 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(919): App\Controllers\TestDB->index()
+#6 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+#7 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-atelier3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-19 13:00:14 --> Column 'idRecette' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\RecetteModel.php(29): CodeIgniter\Database\BaseConnection->query('CALL Ajout_Ing(?,?,?)', [...])
+ 2 APPPATH\Controllers\TestDB.php(36): App\Models\RecetteModel->Ingredient_In_Recette('6', '31', '100')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TestDB->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-19 13:00:14 --> mysqli_sql_exception: Column 'idRecette' cannot be null in C:\laragon\www\ci-atelier3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\ci-atelier3\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL Ajout_Ing(...', 0)
+#1 C:\laragon\www\ci-atelier3\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CALL Ajout_Ing(...')
+#2 C:\laragon\www\ci-atelier3\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CALL Ajout_Ing(...')
+#3 C:\laragon\www\ci-atelier3\app\Models\RecetteModel.php(29): CodeIgniter\Database\BaseConnection->query('CALL Ajout_Ing(...', Array)
+#4 C:\laragon\www\ci-atelier3\app\Controllers\TestDB.php(36): App\Models\RecetteModel->Ingredient_In_Recette('6', '31', '100')
+#5 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(919): App\Controllers\TestDB->index()
+#6 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+#7 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-atelier3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-19 13:00:14 --> Column 'idRecette' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\RecetteModel.php(29): CodeIgniter\Database\BaseConnection->query('CALL Ajout_Ing(?,?,?)', [...])
+ 2 APPPATH\Controllers\TestDB.php(36): App\Models\RecetteModel->Ingredient_In_Recette('6', '31', '100')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TestDB->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-19 13:00:14 --> mysqli_sql_exception: Column 'idRecette' cannot be null in C:\laragon\www\ci-atelier3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\ci-atelier3\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL Ajout_Ing(...', 0)
+#1 C:\laragon\www\ci-atelier3\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CALL Ajout_Ing(...')
+#2 C:\laragon\www\ci-atelier3\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CALL Ajout_Ing(...')
+#3 C:\laragon\www\ci-atelier3\app\Models\RecetteModel.php(29): CodeIgniter\Database\BaseConnection->query('CALL Ajout_Ing(...', Array)
+#4 C:\laragon\www\ci-atelier3\app\Controllers\TestDB.php(36): App\Models\RecetteModel->Ingredient_In_Recette('6', '31', '100')
+#5 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(919): App\Controllers\TestDB->index()
+#6 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+#7 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-atelier3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-19 13:00:14 --> Column 'idRecette' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\RecetteModel.php(29): CodeIgniter\Database\BaseConnection->query('CALL Ajout_Ing(?,?,?)', [...])
+ 2 APPPATH\Controllers\TestDB.php(36): App\Models\RecetteModel->Ingredient_In_Recette('6', '31', '100')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TestDB->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-19 13:00:14 --> mysqli_sql_exception: Column 'idRecette' cannot be null in C:\laragon\www\ci-atelier3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\ci-atelier3\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL Ajout_Ing(...', 0)
+#1 C:\laragon\www\ci-atelier3\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CALL Ajout_Ing(...')
+#2 C:\laragon\www\ci-atelier3\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CALL Ajout_Ing(...')
+#3 C:\laragon\www\ci-atelier3\app\Models\RecetteModel.php(29): CodeIgniter\Database\BaseConnection->query('CALL Ajout_Ing(...', Array)
+#4 C:\laragon\www\ci-atelier3\app\Controllers\TestDB.php(36): App\Models\RecetteModel->Ingredient_In_Recette('6', '31', '100')
+#5 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(919): App\Controllers\TestDB->index()
+#6 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+#7 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-atelier3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-19 13:00:14 --> Column 'idRecette' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\RecetteModel.php(29): CodeIgniter\Database\BaseConnection->query('CALL Ajout_Ing(?,?,?)', [...])
+ 2 APPPATH\Controllers\TestDB.php(36): App\Models\RecetteModel->Ingredient_In_Recette('6', '31', '100')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TestDB->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-19 13:00:14 --> mysqli_sql_exception: Column 'idRecette' cannot be null in C:\laragon\www\ci-atelier3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\ci-atelier3\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL Ajout_Ing(...', 0)
+#1 C:\laragon\www\ci-atelier3\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CALL Ajout_Ing(...')
+#2 C:\laragon\www\ci-atelier3\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CALL Ajout_Ing(...')
+#3 C:\laragon\www\ci-atelier3\app\Models\RecetteModel.php(29): CodeIgniter\Database\BaseConnection->query('CALL Ajout_Ing(...', Array)
+#4 C:\laragon\www\ci-atelier3\app\Controllers\TestDB.php(36): App\Models\RecetteModel->Ingredient_In_Recette('6', '31', '100')
+#5 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(919): App\Controllers\TestDB->index()
+#6 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+#7 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-atelier3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-19 13:00:14 --> Column 'idRecette' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\RecetteModel.php(29): CodeIgniter\Database\BaseConnection->query('CALL Ajout_Ing(?,?,?)', [...])
+ 2 APPPATH\Controllers\TestDB.php(36): App\Models\RecetteModel->Ingredient_In_Recette('6', '31', '100')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TestDB->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-19 13:00:15 --> mysqli_sql_exception: Column 'idRecette' cannot be null in C:\laragon\www\ci-atelier3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\ci-atelier3\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL Ajout_Ing(...', 0)
+#1 C:\laragon\www\ci-atelier3\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CALL Ajout_Ing(...')
+#2 C:\laragon\www\ci-atelier3\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CALL Ajout_Ing(...')
+#3 C:\laragon\www\ci-atelier3\app\Models\RecetteModel.php(29): CodeIgniter\Database\BaseConnection->query('CALL Ajout_Ing(...', Array)
+#4 C:\laragon\www\ci-atelier3\app\Controllers\TestDB.php(36): App\Models\RecetteModel->Ingredient_In_Recette('6', '31', '100')
+#5 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(919): App\Controllers\TestDB->index()
+#6 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+#7 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-atelier3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-19 13:00:15 --> Column 'idRecette' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\RecetteModel.php(29): CodeIgniter\Database\BaseConnection->query('CALL Ajout_Ing(?,?,?)', [...])
+ 2 APPPATH\Controllers\TestDB.php(36): App\Models\RecetteModel->Ingredient_In_Recette('6', '31', '100')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TestDB->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-19 13:00:15 --> mysqli_sql_exception: Column 'idRecette' cannot be null in C:\laragon\www\ci-atelier3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\ci-atelier3\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL Ajout_Ing(...', 0)
+#1 C:\laragon\www\ci-atelier3\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CALL Ajout_Ing(...')
+#2 C:\laragon\www\ci-atelier3\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CALL Ajout_Ing(...')
+#3 C:\laragon\www\ci-atelier3\app\Models\RecetteModel.php(29): CodeIgniter\Database\BaseConnection->query('CALL Ajout_Ing(...', Array)
+#4 C:\laragon\www\ci-atelier3\app\Controllers\TestDB.php(36): App\Models\RecetteModel->Ingredient_In_Recette('6', '31', '100')
+#5 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(919): App\Controllers\TestDB->index()
+#6 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+#7 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-atelier3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-19 13:00:15 --> Column 'idRecette' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\RecetteModel.php(29): CodeIgniter\Database\BaseConnection->query('CALL Ajout_Ing(?,?,?)', [...])
+ 2 APPPATH\Controllers\TestDB.php(36): App\Models\RecetteModel->Ingredient_In_Recette('6', '31', '100')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TestDB->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-19 13:03:31 --> mysqli_sql_exception: Column 'idRecette' cannot be null in C:\laragon\www\ci-atelier3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\ci-atelier3\system\Database\MySQLi\Connection.php(306): mysqli->query('CALL Ajout_Ing(...', 0)
+#1 C:\laragon\www\ci-atelier3\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CALL Ajout_Ing(...')
+#2 C:\laragon\www\ci-atelier3\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CALL Ajout_Ing(...')
+#3 C:\laragon\www\ci-atelier3\app\Models\RecetteModel.php(29): CodeIgniter\Database\BaseConnection->query('CALL Ajout_Ing(...', Array)
+#4 C:\laragon\www\ci-atelier3\app\Controllers\TestDB.php(36): App\Models\RecetteModel->Ingredient_In_Recette('6', '31', '100')
+#5 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(919): App\Controllers\TestDB->index()
+#6 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+#7 C:\laragon\www\ci-atelier3\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ci-atelier3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-19 13:03:31 --> Column 'idRecette' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\RecetteModel.php(29): CodeIgniter\Database\BaseConnection->query('CALL Ajout_Ing(?,?,?)', [...])
+ 2 APPPATH\Controllers\TestDB.php(36): App\Models\RecetteModel->Ingredient_In_Recette('6', '31', '100')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TestDB->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-19 13:40:48 --> Undefined constant "Les_Recettes"
+in APPPATH\Views\recette\recette_liste.php on line 10.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('recette/recette_liste.php', [], true)
+ 4 APPPATH\Controllers\Recette.php(15): view('recette/recette_liste.php', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Recette->getListe()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recette))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-19 13:40:53 --> Undefined variable $data
+in APPPATH\Views\recette\recette_liste.php on line 10.
+ 1 APPPATH\Views\recette\recette_liste.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\laragon\\www\\ci-atelier3\\app\\Views\\recette\\recette_liste.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\ci-atelier3\\app\\Views\\recette\\recette_liste.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('recette/recette_liste.php', [], true)
+ 5 APPPATH\Controllers\Recette.php(15): view('recette/recette_liste.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Recette->getListe()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recette))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-19 13:41:53 --> Undefined constant "Les_Recettes"
+in APPPATH\Views\recette\recette_liste.php on line 10.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('recette/recette_liste.php', [], true)
+ 4 APPPATH\Controllers\Recette.php(15): view('recette/recette_liste.php', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Recette->getListe()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recette))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-19 13:42:02 --> Array to string conversion
+in APPPATH\Views\recette\recette_liste.php on line 11.
+ 1 APPPATH\Views\recette\recette_liste.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\laragon\\www\\ci-atelier3\\app\\Views\\recette\\recette_liste.php', 11)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\ci-atelier3\\app\\Views\\recette\\recette_liste.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('recette/recette_liste.php', [], true)
+ 5 APPPATH\Controllers\Recette.php(15): view('recette/recette_liste.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Recette->getListe()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recette))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

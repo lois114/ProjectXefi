@@ -1,0 +1,32 @@
+ERROR - 2024-10-08 10:45:24 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]Fournisseur TCP : Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Délai d'attente de connexion expiré SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez si le nom de l'instance est correct et si SQL Server est configuré pour autoriser les connexions distantes. Pour plus d'informations, consultez la documentation en ligne de SQL Server. SQLSTATE: 08001, code: 10061 in C:\Users\lois1\Desktop\laragon\www\FORMULAIRE\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\Users\lois1\Desktop\laragon\www\FORMULAIRE\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 C:\Users\lois1\Desktop\laragon\www\FORMULAIRE\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\lois1\Desktop\laragon\www\FORMULAIRE\system\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#3 C:\Users\lois1\Desktop\laragon\www\FORMULAIRE\system\Model.php(237): CodeIgniter\Database\SQLSRV\Builder->get()
+#4 C:\Users\lois1\Desktop\laragon\www\FORMULAIRE\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\lois1\Desktop\laragon\www\FORMULAIRE\app\Controllers\SignupController.php(58): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\lois1\Desktop\laragon\www\FORMULAIRE\system\CodeIgniter.php(919): App\Controllers\SignupController->Affiche()
+#7 C:\Users\lois1\Desktop\laragon\www\FORMULAIRE\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+#8 C:\Users\lois1\Desktop\laragon\www\FORMULAIRE\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\lois1\Desktop\laragon\www\FORMULAIRE\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-10-08 10:45:24 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server]Fournisseur TCP : Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Délai d'attente de connexion expiré SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]Une erreur liée au réseau ou spécifique à l'instance s'est produite lors de l'établissement d'une connexion à SQL Server. Le serveur est introuvable ou n'est pas accessible. Vérifiez si le nom de l'instance est correct et si SQL Server est configuré pour autoriser les connexions distantes. Pour plus d'informations, consultez la documentation en ligne de SQL Server. SQLSTATE: 08001, code: 10061
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "FORMULAIRE"."dbo"."FORMULAIRE"', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\SQLSRV\Builder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\SignupController.php(58): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SignupController->Affiche()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

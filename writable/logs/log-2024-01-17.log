@@ -1,0 +1,128 @@
+INFO - 2024-01-17 16:35:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 16:35:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 16:35:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 16:35:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 16:35:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 16:35:51 --> syntax error, unexpected 'return' (T_RETURN)
+in APPPATH\Models\PersonneModel.php on line 76.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\AP-3\\app\\Models\\PersonneModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\PersonneModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\PersonneModel')
+ 4 [internal function]: spl_autoload_call('App\\Models\\PersonneModel')
+ 5 SYSTEMPATH\Config\Factories.php(270): class_exists('App\\Models\\PersonneModel')
+ 6 SYSTEMPATH\Config\Factories.php(196): CodeIgniter\Config\Factories::locateClass([...], 'PersonneModel')
+ 7 SYSTEMPATH\Config\Factories.php(155): CodeIgniter\Config\Factories::getDefinedInstance([...], 'PersonneModel', [...])
+ 8 SYSTEMPATH\Common.php(827): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 9 APPPATH\Controllers\SigninController.php(12): model('PersonneModel')
+10 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SigninController->loginAuth()
+11 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SigninController))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\AP-3\\public\\index.php')
+INFO - 2024-01-17 16:35:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 16:36:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 16:36:45 --> syntax error, unexpected 'return' (T_RETURN)
+in APPPATH\Models\PersonneModel.php on line 76.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\AP-3\\app\\Models\\PersonneModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\PersonneModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\PersonneModel')
+ 4 [internal function]: spl_autoload_call('App\\Models\\PersonneModel')
+ 5 SYSTEMPATH\Config\Factories.php(270): class_exists('App\\Models\\PersonneModel')
+ 6 SYSTEMPATH\Config\Factories.php(196): CodeIgniter\Config\Factories::locateClass([...], 'PersonneModel')
+ 7 SYSTEMPATH\Config\Factories.php(155): CodeIgniter\Config\Factories::getDefinedInstance([...], 'PersonneModel', [...])
+ 8 SYSTEMPATH\Common.php(827): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 9 APPPATH\Controllers\SigninController.php(12): model('PersonneModel')
+10 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SigninController->loginAuth()
+11 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SigninController))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\AP-3\\public\\index.php')
+INFO - 2024-01-17 16:36:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 16:38:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 16:38:13 --> syntax error, unexpected 'return' (T_RETURN)
+in APPPATH\Models\PersonneModel.php on line 76.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\AP-3\\app\\Models\\PersonneModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\PersonneModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\PersonneModel')
+ 4 [internal function]: spl_autoload_call('App\\Models\\PersonneModel')
+ 5 SYSTEMPATH\Config\Factories.php(270): class_exists('App\\Models\\PersonneModel')
+ 6 SYSTEMPATH\Config\Factories.php(196): CodeIgniter\Config\Factories::locateClass([...], 'PersonneModel')
+ 7 SYSTEMPATH\Config\Factories.php(155): CodeIgniter\Config\Factories::getDefinedInstance([...], 'PersonneModel', [...])
+ 8 SYSTEMPATH\Common.php(827): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 9 APPPATH\Controllers\SigninController.php(12): model('PersonneModel')
+10 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SigninController->loginAuth()
+11 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SigninController))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\AP-3\\public\\index.php')
+INFO - 2024-01-17 16:38:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 16:38:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 16:38:22 --> syntax error, unexpected 'return' (T_RETURN)
+in APPPATH\Models\PersonneModel.php on line 76.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\AP-3\\app\\Models\\PersonneModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\PersonneModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\PersonneModel')
+ 4 [internal function]: spl_autoload_call('App\\Models\\PersonneModel')
+ 5 SYSTEMPATH\Config\Factories.php(270): class_exists('App\\Models\\PersonneModel')
+ 6 SYSTEMPATH\Config\Factories.php(196): CodeIgniter\Config\Factories::locateClass([...], 'PersonneModel')
+ 7 SYSTEMPATH\Config\Factories.php(155): CodeIgniter\Config\Factories::getDefinedInstance([...], 'PersonneModel', [...])
+ 8 SYSTEMPATH\Common.php(827): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 9 APPPATH\Controllers\SigninController.php(12): model('PersonneModel')
+10 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SigninController->loginAuth()
+11 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SigninController))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\AP-3\\public\\index.php')
+INFO - 2024-01-17 16:38:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 16:38:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 16:38:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 16:38:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 16:38:49 --> syntax error, unexpected 'return' (T_RETURN)
+in APPPATH\Models\PersonneModel.php on line 76.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\AP-3\\app\\Models\\PersonneModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\PersonneModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\PersonneModel')
+ 4 [internal function]: spl_autoload_call('App\\Models\\PersonneModel')
+ 5 SYSTEMPATH\Config\Factories.php(270): class_exists('App\\Models\\PersonneModel')
+ 6 SYSTEMPATH\Config\Factories.php(196): CodeIgniter\Config\Factories::locateClass([...], 'PersonneModel')
+ 7 SYSTEMPATH\Config\Factories.php(155): CodeIgniter\Config\Factories::getDefinedInstance([...], 'PersonneModel', [...])
+ 8 SYSTEMPATH\Common.php(827): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 9 APPPATH\Controllers\SigninController.php(12): model('PersonneModel')
+10 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SigninController->loginAuth()
+11 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SigninController))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\AP-3\\public\\index.php')
+INFO - 2024-01-17 16:38:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 16:38:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 16:39:00 --> syntax error, unexpected 'return' (T_RETURN)
+in APPPATH\Models\PersonneModel.php on line 76.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\AP-3\\app\\Models\\PersonneModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\PersonneModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\PersonneModel')
+ 4 [internal function]: spl_autoload_call('App\\Models\\PersonneModel')
+ 5 SYSTEMPATH\Config\Factories.php(270): class_exists('App\\Models\\PersonneModel')
+ 6 SYSTEMPATH\Config\Factories.php(196): CodeIgniter\Config\Factories::locateClass([...], 'PersonneModel')
+ 7 SYSTEMPATH\Config\Factories.php(155): CodeIgniter\Config\Factories::getDefinedInstance([...], 'PersonneModel', [...])
+ 8 SYSTEMPATH\Common.php(827): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 9 APPPATH\Controllers\SignupController.php(12): model('PersonneModel')
+10 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SignupController->store()
+11 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\AP-3\\public\\index.php')
+INFO - 2024-01-17 16:39:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 16:39:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 16:39:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 16:39:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 16:39:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 16:39:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 16:39:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 16:39:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 16:39:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 16:39:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 16:40:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 16:40:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 16:40:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 16:40:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 16:40:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

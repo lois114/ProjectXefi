@@ -1,0 +1,12 @@
+ERROR - 2023-11-13 06:27:36 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Nom d'objet 'AP-3.dbo.recettes' non valide.
+CRITICAL - 2023-11-13 06:27:36 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Nom d'objet 'AP-3.dbo.recettes' non valide.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "AP-3"."dbo"."recettes"', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\SQLSRV\Builder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Recette.php(12): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Recette->getListe()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recette))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

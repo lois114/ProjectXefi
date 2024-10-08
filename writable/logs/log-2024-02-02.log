@@ -1,0 +1,96 @@
+INFO - 2024-02-02 08:02:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-02 08:02:50 --> Invalid file: "index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('index.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('index.php', [], true)
+ 3 APPPATH\Controllers\Base.php(15): view('index.php')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Base->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Base))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\FORMULAIRE\\public\\index.php')
+ERROR - 2024-02-02 08:03:54 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]La conversion de la valeur varchar '16497652459' a dépassé une colonne int.
+CRITICAL - 2024-02-02 08:03:54 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]La conversion de la valeur varchar '16497652459' a dépassé une colonne int.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO "FORMULAIRE"."dbo"."FORMULAIRE" ("Nom","Prenom","Mail","Adresse","Tel","Motdepasse","Description","Signature","Date") VALUES (:Nom:, :Prenom:, :Mail:, :Adresse:, :Tel:, :Motdepasse:, :Description:, :Signature:, :Date:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\SignupController.php(33): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SignupController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\FORMULAIRE\\public\\index.php')
+INFO - 2024-02-02 09:08:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-02 09:08:20 --> Invalid file: "index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('index.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('index.php', [], true)
+ 3 APPPATH\Controllers\Base.php(15): view('index.php')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Base->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Base))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\FORMULAIRE\\public\\index.php')
+INFO - 2024-02-02 09:08:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-02 09:08:45 --> Invalid file: "index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('index.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('index.php', [], true)
+ 3 APPPATH\Controllers\Base.php(15): view('index.php')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Base->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Base))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\FORMULAIRE\\public\\index.php')
+INFO - 2024-02-02 09:11:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-02 09:11:37 --> Invalid file: "index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('index.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('index.php', [], true)
+ 3 APPPATH\Controllers\Base.php(15): view('index.php')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Base->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Base))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\FORMULAIRE\\public\\index.php')
+INFO - 2024-02-02 15:43:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-02 15:43:05 --> Invalid file: "index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('index.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('index.php', [], true)
+ 3 APPPATH\Controllers\Base.php(15): view('index.php')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Base->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Base))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\FORMULAIRE\\public\\index.php')
+CRITICAL - 2024-02-02 15:43:10 --> You have not selected a database type to connect to.
+in SYSTEMPATH\Database\Database.php on line 52.
+ 1 SYSTEMPATH\Database\Config.php(81): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(151): CodeIgniter\Database\Config::connect('default')
+ 3 SYSTEMPATH\Config\Factories.php(215): CodeIgniter\Model->__construct(null)
+ 4 SYSTEMPATH\Config\Factories.php(165): CodeIgniter\Config\Factories::createInstance('models', 'App\\Models\\PersonneModel', [...])
+ 5 SYSTEMPATH\Common.php(827): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 6 APPPATH\Controllers\SignupController.php(57): model('PersonneModel')
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SignupController->Affiche()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\FORMULAIRE\\public\\index.php')
+INFO - 2024-02-02 15:43:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-02 15:43:26 --> Invalid file: "index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('index.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('index.php', [], true)
+ 3 APPPATH\Controllers\Base.php(15): view('index.php')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Base->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Base))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\FORMULAIRE\\public\\index.php')
+CRITICAL - 2024-02-02 15:45:11 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Debug\Exceptions.php on line 192.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()

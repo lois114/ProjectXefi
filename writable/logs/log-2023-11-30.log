@@ -1,0 +1,230 @@
+ERROR - 2023-11-30 07:35:27 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure() in C:\laragon\www\AP-3\system\Database\SQLSRV\Connection.php:128
+Stack trace:
+#0 C:\laragon\www\AP-3\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 C:\laragon\www\AP-3\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\AP-3\system\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#3 C:\laragon\www\AP-3\system\Model.php(264): CodeIgniter\Database\SQLSRV\Builder->get()
+#4 C:\laragon\www\AP-3\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#5 C:\laragon\www\AP-3\app\Controllers\TestDB.php(17): CodeIgniter\BaseModel->first()
+#6 C:\laragon\www\AP-3\system\CodeIgniter.php(919): App\Controllers\TestDB->index()
+#7 C:\laragon\www\AP-3\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+#8 C:\laragon\www\AP-3\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\AP-3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\AP-3\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-11-30 07:35:27 --> Unable to connect to the database.
+Main connection [SQLSRV]: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure()
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "AP3_TEST"."dbo"."Personne"
+ ORDER BY (SELECT NULL)  OFFSET 0  ROWS FETCH NEXT 1 ROWS ONLY ', [], false)
+ 3 SYSTEMPATH\Model.php(264): CodeIgniter\Database\SQLSRV\Builder->get()
+ 4 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\TestDB.php(17): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TestDB->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\AP-3\\public\\index.php')
+ERROR - 2023-11-30 07:55:35 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure() in C:\laragon\www\AP-3\system\Database\SQLSRV\Connection.php:128
+Stack trace:
+#0 C:\laragon\www\AP-3\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 C:\laragon\www\AP-3\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\AP-3\system\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#3 C:\laragon\www\AP-3\system\Model.php(264): CodeIgniter\Database\SQLSRV\Builder->get()
+#4 C:\laragon\www\AP-3\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#5 C:\laragon\www\AP-3\app\Controllers\TestDB.php(17): CodeIgniter\BaseModel->first()
+#6 C:\laragon\www\AP-3\system\CodeIgniter.php(919): App\Controllers\TestDB->index()
+#7 C:\laragon\www\AP-3\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+#8 C:\laragon\www\AP-3\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\AP-3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\AP-3\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-11-30 07:55:35 --> Unable to connect to the database.
+Main connection [SQLSRV]: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure()
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "AP3_TEST"."dbo"."Personne"
+ ORDER BY (SELECT NULL)  OFFSET 0  ROWS FETCH NEXT 1 ROWS ONLY ', [], false)
+ 3 SYSTEMPATH\Model.php(264): CodeIgniter\Database\SQLSRV\Builder->get()
+ 4 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\TestDB.php(17): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TestDB->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\AP-3\\public\\index.php')
+ERROR - 2023-11-30 07:58:12 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure() in C:\laragon\www\AP-3\system\Database\SQLSRV\Connection.php:128
+Stack trace:
+#0 C:\laragon\www\AP-3\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 C:\laragon\www\AP-3\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\AP-3\system\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#3 C:\laragon\www\AP-3\system\Model.php(264): CodeIgniter\Database\SQLSRV\Builder->get()
+#4 C:\laragon\www\AP-3\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#5 C:\laragon\www\AP-3\app\Controllers\TestDB.php(17): CodeIgniter\BaseModel->first()
+#6 C:\laragon\www\AP-3\system\CodeIgniter.php(919): App\Controllers\TestDB->index()
+#7 C:\laragon\www\AP-3\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+#8 C:\laragon\www\AP-3\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\AP-3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\AP-3\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-11-30 07:58:12 --> Unable to connect to the database.
+Main connection [SQLSRV]: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure()
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "AP3_TEST"."dbo"."Personne"
+ ORDER BY (SELECT NULL)  OFFSET 0  ROWS FETCH NEXT 1 ROWS ONLY ', [], false)
+ 3 SYSTEMPATH\Model.php(264): CodeIgniter\Database\SQLSRV\Builder->get()
+ 4 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\TestDB.php(17): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TestDB->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\AP-3\\public\\index.php')
+ERROR - 2023-11-30 08:00:45 --> Error connecting to the database: Error: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure() in C:\laragon\www\AP-3\system\Database\SQLSRV\Connection.php:128
+Stack trace:
+#0 C:\laragon\www\AP-3\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 C:\laragon\www\AP-3\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\AP-3\system\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#3 C:\laragon\www\AP-3\system\Model.php(264): CodeIgniter\Database\SQLSRV\Builder->get()
+#4 C:\laragon\www\AP-3\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#5 C:\laragon\www\AP-3\app\Controllers\TestDB.php(17): CodeIgniter\BaseModel->first()
+#6 C:\laragon\www\AP-3\system\CodeIgniter.php(919): App\Controllers\TestDB->index()
+#7 C:\laragon\www\AP-3\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+#8 C:\laragon\www\AP-3\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\AP-3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\AP-3\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-11-30 08:00:45 --> Unable to connect to the database.
+Main connection [SQLSRV]: Call to undefined function CodeIgniter\Database\SQLSRV\sqlsrv_configure()
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "AP3_TEST"."dbo"."Personne"
+ ORDER BY (SELECT NULL)  OFFSET 0  ROWS FETCH NEXT 1 ROWS ONLY ', [], false)
+ 3 SYSTEMPATH\Model.php(264): CodeIgniter\Database\SQLSRV\Builder->get()
+ 4 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\TestDB.php(17): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TestDB->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\AP-3\\public\\index.php')
+INFO - 2023-11-30 08:51:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-30 09:49:39 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Nom d'objet 'AP3_TEST.dbo.users' non valide.
+CRITICAL - 2023-11-30 09:49:39 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Nom d'objet 'AP3_TEST.dbo.users' non valide.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM "AP3_TEST"."dbo"."users"
+WHERE "email" = :email:
+ ORDER BY (SELECT NULL)  OFFSET 0  ROWS FETCH NEXT 1 ROWS ONLY ', [...], false)
+ 2 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\SQLSRV\Builder->get()
+ 3 SYSTEMPATH\Validation\Validation.php(309): CodeIgniter\Validation\StrictRules\Rules->is_unique('loisbeaujard@gmail.com', 'email', [...], null, 'Mail')
+ 4 SYSTEMPATH\Validation\Validation.php(195): CodeIgniter\Validation\Validation->processRules('Mail', 'Mail', 'loisbeaujard@gmail.com', [...], [...])
+ 5 SYSTEMPATH\Controller.php(150): CodeIgniter\Validation\Validation->run()
+ 6 APPPATH\Controllers\SignupController.php(19): CodeIgniter\Controller->validate([...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SignupController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\AP-3\\public\\index.php')
+CRITICAL - 2023-11-30 09:51:04 --> Call to undefined function set_value()
+in APPPATH\Views\inscription.php on line 35.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('inscription.php', [], true)
+ 4 APPPATH\Controllers\Base.php(52): view('inscription.php')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Base->inscription()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Base))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\AP-3\\public\\index.php')
+CRITICAL - 2023-11-30 09:51:11 --> Call to undefined function set_value()
+in APPPATH\Views\inscription.php on line 35.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('inscription.php', [], true)
+ 4 APPPATH\Controllers\Base.php(52): view('inscription.php')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Base->inscription()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Base))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\AP-3\\public\\index.php')
+INFO - 2023-11-30 15:43:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 15:44:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 15:44:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 15:47:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 15:47:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 15:48:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 15:49:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 15:49:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 15:51:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 15:52:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 16:35:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 16:35:13 --> Undefined index: rank
+in APPPATH\Controllers\SigninController.php on line 27.
+ 1 APPPATH\Controllers\SigninController.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: rank', 'C:\\laragon\\www\\AP-3\\app\\Controllers\\SigninController.php', 27, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\SigninController->loginAuth()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SigninController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\AP-3\\public\\index.php')
+INFO - 2023-11-30 16:35:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 16:39:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 16:39:57 --> Undefined index: Rank
+in APPPATH\Views\template\menu.php on line 75.
+ 1 APPPATH\Views\template\menu.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: Rank', 'C:\\laragon\\www\\AP-3\\app\\Views\\template\\menu.php', 75, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\AP-3\\app\\Views\\template\\menu.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('template/menu.php', [], true)
+ 5 APPPATH\Controllers\Base.php(12): view('template/menu.php')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Base->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Base))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-30 16:40:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 16:40:00 --> Undefined index: Rank
+in APPPATH\Views\template\menu.php on line 75.
+ 1 APPPATH\Views\template\menu.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: Rank', 'C:\\laragon\\www\\AP-3\\app\\Views\\template\\menu.php', 75, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\AP-3\\app\\Views\\template\\menu.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('template/menu.php', [], true)
+ 5 APPPATH\Controllers\Base.php(44): view('template/menu.php')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Base->connection()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Base))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\AP-3\\public\\index.php')
+INFO - 2023-11-30 16:41:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 16:41:09 --> Undefined index: Rank
+in APPPATH\Views\template\menu.php on line 60.
+ 1 APPPATH\Views\template\menu.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: Rank', 'C:\\laragon\\www\\AP-3\\app\\Views\\template\\menu.php', 60, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\AP-3\\app\\Views\\template\\menu.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('template/menu.php', [], true)
+ 5 APPPATH\Controllers\Base.php(44): view('template/menu.php')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Base->connection()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Base))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\AP-3\\public\\index.php')
+INFO - 2023-11-30 16:41:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-30 16:41:11 --> Undefined index: Rank
+in APPPATH\Views\template\menu.php on line 60.
+ 1 APPPATH\Views\template\menu.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: Rank', 'C:\\laragon\\www\\AP-3\\app\\Views\\template\\menu.php', 60, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\AP-3\\app\\Views\\template\\menu.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('template/menu.php', [], true)
+ 5 APPPATH\Controllers\Base.php(44): view('template/menu.php')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Base->connection()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Base))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\AP-3\\public\\index.php')
+INFO - 2023-11-30 16:41:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 16:41:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-30 16:41:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

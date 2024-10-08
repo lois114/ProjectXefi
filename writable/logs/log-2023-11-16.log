@@ -1,0 +1,162 @@
+ERROR - 2023-11-16 10:19:54 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Nom d'objet 'AP-3.dbo.recettes' non valide.
+CRITICAL - 2023-11-16 10:19:54 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Nom d'objet 'AP-3.dbo.recettes' non valide.
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\SQLSRV\Builder.php(610): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "AP-3"."dbo"."recettes"', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\SQLSRV\Builder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Recette.php(12): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Recette->getListe()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recette))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 10:50:13 --> Undefined constant "uri"
+in APPPATH\Views\template\menu.php on line 54.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('template/menu.php', [], true)
+ 4 APPPATH\Controllers\Recette.php(14): view('template/menu.php')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Recette->getListe()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recette))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 10:51:25 --> Undefined constant "uri"
+in APPPATH\Views\template\menu.php on line 54.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('template/menu.php', [], true)
+ 4 APPPATH\Controllers\Recette.php(14): view('template/menu.php')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Recette->getListe()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recette))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 10:51:29 --> Undefined constant "uri"
+in APPPATH\Views\template\menu.php on line 54.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('template/menu.php', [], true)
+ 4 APPPATH\Controllers\TestDB.php(20): view('template/menu.php')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TestDB->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 10:51:30 --> Undefined constant "uri"
+in APPPATH\Views\template\menu.php on line 54.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('template/menu.php', [], true)
+ 4 APPPATH\Controllers\TestDB.php(20): view('template/menu.php')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TestDB->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 13:47:38 --> Undefined constant "uri"
+in APPPATH\Views\template\menu.php on line 54.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('template/menu.php', [], true)
+ 4 APPPATH\Controllers\Recette.php(14): view('template/menu.php')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Recette->getListe()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recette))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 13:50:25 --> Undefined constant "uri"
+in APPPATH\Views\template\menu.php on line 54.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('template/menu.php', [], true)
+ 4 APPPATH\Controllers\Recette.php(14): view('template/menu.php')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Recette->getListe()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recette))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 13:50:53 --> Undefined constant "uri"
+in APPPATH\Views\template\menu.php on line 54.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('template/menu.php', [], true)
+ 4 APPPATH\Controllers\Recette.php(14): view('template/menu.php')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Recette->getListe()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recette))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 13:51:48 --> Call to a member function segment() on string
+in APPPATH\Views\template\menu.php on line 54.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('template/menu.php', [], true)
+ 4 APPPATH\Controllers\Recette.php(14): view('template/menu.php')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Recette->getListe()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recette))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 13:53:15 --> Call to a member function segment() on string
+in APPPATH\Views\template\menu.php on line 54.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('template/menu.php', [], true)
+ 4 APPPATH\Controllers\Recette.php(14): view('template/menu.php')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Recette->getListe()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recette))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 13:53:19 --> Call to a member function segment() on string
+in APPPATH\Views\template\menu.php on line 54.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('template/menu.php', [], true)
+ 4 APPPATH\Controllers\Recette.php(14): view('template/menu.php')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Recette->getListe()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recette))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 13:53:22 --> Call to a member function segment() on string
+in APPPATH\Views\template\menu.php on line 54.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('template/menu.php', [], true)
+ 4 APPPATH\Controllers\TestDB.php(20): view('template/menu.php')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TestDB->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 13:53:23 --> Call to a member function segment() on string
+in APPPATH\Views\template\menu.php on line 54.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('template/menu.php', [], true)
+ 4 APPPATH\Controllers\TestDB.php(20): view('template/menu.php')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TestDB->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 13:54:50 --> Call to a member function segment() on string
+in APPPATH\Views\template\menu.php on line 54.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('template/menu.php', [], true)
+ 4 APPPATH\Controllers\TestDB.php(20): view('template/menu.php')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\TestDB->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestDB))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 16:40:28 --> Unsupported operand types: string + bool
+in APPPATH\Views\template\menu.php on line 43.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('template/menu.php', [], true)
+ 4 APPPATH\Controllers\Base.php(12): view('template/menu.php')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Base->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Base))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 16:41:05 --> Unsupported operand types: string + string
+in APPPATH\Views\template\menu.php on line 43.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('template/menu.php', [], true)
+ 4 APPPATH\Controllers\Base.php(12): view('template/menu.php')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Base->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Base))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
